@@ -79,4 +79,14 @@ export const features: Feature[] = [
     color: "bg-orange-500",
     icon: "📋",
   },
+  {
+    id: "audit-log",
+    number: 8,
+    title: "Audit Log",
+    description:
+      "Track and review all admin actions, bot events, and system changes for accountability",
+    href: "/demo/audit-log",
+    color: "bg-slate-500",
+    icon: "📝",
+  },
 ];
