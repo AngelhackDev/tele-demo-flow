@@ -8,7 +8,7 @@ export default function ScheduledPostPage() {
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-gray-900">
-            3. Scheduled Post
+            4. Scheduled Post
           </h1>
           <p className="text-gray-500 mt-1">
             Schedule and publish content to Telegram groups/channels at specific

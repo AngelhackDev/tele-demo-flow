@@ -33,7 +33,12 @@ export default function Sidebar() {
                   >
                     {feature.number}
                   </span>
-                  <span>{feature.title}</span>
+                  <span className="flex-1">{feature.title}</span>
+                  {feature.wip && (
+                    <span className="text-[9px] bg-yellow-500/20 text-yellow-400 px-1.5 py-0.5 rounded-full font-medium">
+                      WIP
+                    </span>
+                  )}
                 </Link>
               </li>
             );

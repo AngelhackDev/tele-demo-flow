@@ -3,7 +3,7 @@ export default function AuditLogPage() {
     <div className="p-8">
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-gray-900">8. Audit Log</h1>
+          <h1 className="text-2xl font-bold text-gray-900">10. Audit Log</h1>
           <p className="text-gray-500 mt-1">
             Track and review all admin actions, bot events, and system changes
             for accountability

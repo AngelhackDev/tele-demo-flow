@@ -8,7 +8,7 @@ export default function DynamicMenuPage() {
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-gray-900">
-            7. Dynamic Menu
+            5. Dynamic Menu
           </h1>
           <p className="text-gray-500 mt-1">
             Configurable bot command menus that adapt based on context and group

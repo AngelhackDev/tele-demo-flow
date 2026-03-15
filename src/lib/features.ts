@@ -6,12 +6,23 @@ export interface Feature {
   href: string;
   color: string;
   icon: string;
+  wip?: boolean;
 }
 
 export const features: Feature[] = [
   {
-    id: "faq-auto-reply",
+    id: "onboarding",
     number: 1,
+    title: "Onboarding",
+    description:
+      "Guide users to discover and join official Mediacorp groups and channels via bot interaction",
+    href: "/demo/onboarding",
+    color: "bg-teal-500",
+    icon: "👋",
+  },
+  {
+    id: "faq-auto-reply",
+    number: 2,
     title: "FAQ Auto-Reply",
     description:
       "AI-powered automatic responses to frequently asked questions using uploaded data sources",
@@ -21,7 +32,7 @@ export const features: Feature[] = [
   },
   {
     id: "moderation",
-    number: 2,
+    number: 3,
     title: "Moderation",
     description:
       "Automated content moderation with spam detection, keyword filtering, and escalation",
@@ -31,7 +42,7 @@ export const features: Feature[] = [
   },
   {
     id: "scheduled-post",
-    number: 3,
+    number: 4,
     title: "Scheduled Post",
     description:
       "Schedule and publish content to Telegram groups/channels at specific times",
@@ -40,24 +51,14 @@ export const features: Feature[] = [
     icon: "📅",
   },
   {
-    id: "gamification",
-    number: 4,
-    title: "Gamification",
-    description:
-      "Quizzes, rewards, and engagement mechanics to boost audience participation",
-    href: "/demo/gamification",
-    color: "bg-purple-500",
-    icon: "🎮",
-  },
-  {
-    id: "badges",
+    id: "dynamic-menu",
     number: 5,
-    title: "Badges",
+    title: "Dynamic Menu",
     description:
-      "Achievement badges awarded to users based on participation and engagement milestones",
-    href: "/demo/badges",
-    color: "bg-yellow-500",
-    icon: "🏅",
+      "Configurable bot command menus that adapt based on context and user permissions",
+    href: "/demo/dynamic-menu",
+    color: "bg-orange-500",
+    icon: "📋",
   },
   {
     id: "analytics",
@@ -70,23 +71,46 @@ export const features: Feature[] = [
     icon: "📊",
   },
   {
-    id: "dynamic-menu",
+    id: "ai-settings",
     number: 7,
-    title: "Dynamic Menu",
+    title: "AI Settings",
     description:
-      "Configurable bot command menus that adapt based on context and user permissions",
-    href: "/demo/dynamic-menu",
-    color: "bg-orange-500",
-    icon: "📋",
+      "Configure AI behavior with group-level and global settings for prompts, thresholds, and limits",
+    href: "/demo/ai-settings",
+    color: "bg-indigo-500",
+    icon: "⚙️",
+  },
+  {
+    id: "gamification",
+    number: 8,
+    title: "Gamification",
+    description:
+      "Quizzes, rewards, and engagement mechanics to boost audience participation",
+    href: "/demo/gamification",
+    color: "bg-purple-500",
+    icon: "🎮",
+    wip: true,
+  },
+  {
+    id: "badges",
+    number: 9,
+    title: "Badges",
+    description:
+      "Achievement badges awarded to users based on participation and engagement milestones",
+    href: "/demo/badges",
+    color: "bg-yellow-500",
+    icon: "🏅",
+    wip: true,
   },
   {
     id: "audit-log",
-    number: 8,
+    number: 10,
     title: "Audit Log",
     description:
       "Track and review all admin actions, bot events, and system changes for accountability",
     href: "/demo/audit-log",
     color: "bg-slate-500",
     icon: "📝",
+    wip: true,
   },
 ];
