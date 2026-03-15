@@ -1,3 +1,9 @@
+export interface SubFeature {
+  id: string;
+  title: string;
+  href: string;
+}
+
 export interface Feature {
   id: string;
   number: number;
@@ -7,6 +13,7 @@ export interface Feature {
   color: string;
   icon: string;
   wip?: boolean;
+  children?: SubFeature[];
 }
 
 export const features: Feature[] = [
@@ -69,6 +76,18 @@ export const features: Feature[] = [
     href: "/demo/analytics",
     color: "bg-cyan-500",
     icon: "📊",
+    children: [
+      {
+        id: "analytics-dashboard",
+        title: "Dashboard Analytics",
+        href: "/demo/analytics?tab=dashboard",
+      },
+      {
+        id: "analytics-group",
+        title: "Group Analytics",
+        href: "/demo/analytics?tab=group",
+      },
+    ],
   },
   {
     id: "ai-settings",
@@ -79,6 +98,18 @@ export const features: Feature[] = [
     href: "/demo/ai-settings",
     color: "bg-indigo-500",
     icon: "⚙️",
+    children: [
+      {
+        id: "ai-settings-global",
+        title: "Global Setting",
+        href: "/demo/ai-settings?tab=global",
+      },
+      {
+        id: "ai-settings-group",
+        title: "Group Setting",
+        href: "/demo/ai-settings?tab=group",
+      },
+    ],
   },
   {
     id: "gamification",
